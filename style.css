@@ -1,0 +1,134 @@
+.content{
+
+}
+
+.popup-wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    transition: all ease 0.3s;
+}
+
+.popup-wrap.hide{
+    opacity: 0;
+    /* height: 0; */
+    pointer-events: none;;
+}
+
+.comfirm-popup{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    padding: 50px 120px 80px;
+    max-width: 950px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.age{
+    display: flex;
+    margin: 0 auto;
+    color: #484848;
+    padding: 5px;
+    border: 5px solid #FF1F1F;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;;
+
+}
+.age span{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.age-text{
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 650px;
+    margin-bottom: 47px;
+    text-align: center;
+    color: #484848;
+    line-height: 38px;;
+}
+
+.btns-wrap{
+    margin: 0 auto;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.choose{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 56px;
+    width: 155px;
+    color: #fff;
+    font-size: 18px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.choose.yes{
+    background-color: #8EC63E;
+}
+.choose.yes:hover{
+    background-color: #629120;
+}
+.choose.no{
+    background-color: #FF1F1F;
+}
+.choose.no:hover{
+    background-color: #d80f0f;
+}
+
+
+@media screen and (max-width: 768px){
+    .comfirm-popup {
+        padding: 37px 60px 62px;
+    }
+    .age-text {       
+        font-size: 20px;    
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .comfirm-popup {
+        width: 90%;
+        padding: 30px 15px 40px;
+    }
+    .age-text {       
+        font-size: 20px;    
+        line-height: 30px;
+    }
+    .btns-wrap {
+
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .btns-wrap {
+        width: 290px;
+    }
+    .choose{
+        width: 110px;
+        line-height: 44px;
+    }
+}
